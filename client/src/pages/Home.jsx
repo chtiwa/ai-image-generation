@@ -14,7 +14,7 @@ const Home = () => {
   const [loading, setLoading] = useState(false)
   const [allPosts, setAllPosts] = useState(false)
 
-  const [searchText, setSearchText] = useState("abc")
+  const [searchText, setSearchText] = useState("")
   const [searchedResults, setSearchedResults] = useState(null)
   const [searchTimeout, setSearchTimeout] = useState(null)
 
