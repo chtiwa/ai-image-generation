@@ -1,9 +1,9 @@
-const Post = require('../models/Post')
-const asyncWrapper = require('../middleware/async')
-const cloudinary = require('../utils/cloudinary')
+const Post = require("../models/Post")
+const asyncWrapper = require("../middleware/async")
+const cloudinary = require("../utils/cloudinary")
 
 const getPosts = asyncWrapper(async (req, res) => {
-  const posts = await Post.find({})
+  const posts = await Post.find()
   res.status(200).json({ success: true, data: posts })
 })
 
